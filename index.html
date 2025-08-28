@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>JavaScript Example</h1>
+  <p>Click the button to see JavaScript in action 👇</p>
+  
+  <button onclick="showMessage()">Click Me</button>
+  
+  <div id="message"></div>
+
+  <script>
+    // JavaScript Example Code
+
+    // Function to display a message
+    function showMessage() {
+      let name = prompt("What is your name?"); // Ask user input
+      if (name) {
+        document.getElementById("message").innerHTML = "Hello, " + name + "! Welcome to JavaScript 🎉";
+      } else {
+        document.getElementById("message").innerHTML = "You didn’t enter a name 😅";
+      }
+    }
+  </script>
+
+</body>
+</html>
